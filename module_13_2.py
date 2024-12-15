@@ -10,10 +10,6 @@ dp = Dispatcher(bot, storage = MemoryStorage())
 
 
 
-# @dp.message_handler(text = ['Urban', 'ff'])
-# async def urban_message(message):
-#     print("Urban message")
-
 @dp.message_handler(commands = ['start'])
 async def start(message):
     print('Привет! Я бот помогающий твоему здоровью.' )
